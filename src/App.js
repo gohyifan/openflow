@@ -13,7 +13,6 @@ import { Dialog } from 'evergreen-ui';
 
 // import custom components
 import Banner from './components/contributeBanner';
-import Trending from './components/trending';
 
 function App() {
   // initialize state of showLoginOverlay as false to hide it
@@ -27,7 +26,7 @@ function App() {
         NAV
       </div>
       <div className="sideview">
-        SIDE VIEW
+      <Sidebar />
       </div>
       <div className="body-wrapper">
           <Banner
@@ -35,7 +34,6 @@ function App() {
           />
       </div>
       <Nav />
-      <Sidebar />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/search" component={SearchResult} />
