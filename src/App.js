@@ -17,17 +17,15 @@ import { Dialog } from 'evergreen-ui';
 function App() {
   // initialize state of showLoginOverlay as false to hide it
   return (
-    <div>
+    <Router>
       <Nav />
       <Sidebar />
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/search" component={SearchResult} />
-          <Route path="/datasets/:title" component={ Dataset } />
-        </Switch>
-      </Router>
-    </div>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/search" component={SearchResult} />
+        <Route path="/datasets/:title" component={ Dataset } />
+      </Switch>
+    </Router>
   );
 }
 
