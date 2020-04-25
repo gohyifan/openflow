@@ -13,6 +13,7 @@ import { Dialog } from 'evergreen-ui';
 
 // import custom components
 import Banner from './components/contributeBanner';
+import New from './components/New';
 
 function App() {
   // initialize state of showLoginOverlay as false to hide it
@@ -32,6 +33,7 @@ function App() {
           <Banner
           verified={true}
           />
+          <New/>
       </div>
       <Nav />
       <Switch>
