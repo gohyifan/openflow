@@ -239,7 +239,7 @@ class contributeBanner extends Component {
                     </div>
                 </ThemeProvider>
             );
-        
+
     }
 }
 

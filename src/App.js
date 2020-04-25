@@ -17,9 +17,6 @@ import New from './components/New';
 
 function App() {
   // initialize state of showLoginOverlay as false to hide it
-  
-
-
   return (
     <Router>
     <div className="App">
@@ -35,14 +32,12 @@ function App() {
           />
           <New/>
       </div>
-      <Nav />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/search" component={SearchResult} />
         <Route path="/datasets/:title" component={ Dataset } />
       </Switch>
-    </div>
-
     </Router>
   );
 }
