@@ -35,7 +35,7 @@ function Dataset() {
         width="100%"
         paddingY={16}
         paddingX={32}
-        border="muted"
+        borderBottom="muted"
         >
         <Pane textAlign="left" width="60%">
           <Text>University of California</Text>

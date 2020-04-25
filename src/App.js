@@ -8,25 +8,27 @@ import SearchResult from './components/SearchResult'
 import Dataset from './components/Dataset'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Dialog } from 'evergreen-ui';
-
-
-// import custom components
-import New from './components/New';
+import { Pane } from 'evergreen-ui';
 
 function App() {
   // initialize state of showLoginOverlay as false to hide it
   return (
     <Router>
       <Nav />
-      <Sidebar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/search" component={SearchResult} />
-        <Route path="/datasets/:title" component={ Dataset } />
-      </Switch>
+      <Pane display="flex">
+        <Pane width="20%">
+          <Sidebar/>
+        </Pane>
+        <Pane width="80%">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/search" component={SearchResult} />
+            <Route path="/datasets/:title" component={ Dataset } />
+          </Switch>
+        </Pane>
+      </Pane>
     </Router>
   );
 }
 
-export default App
+export default App;
