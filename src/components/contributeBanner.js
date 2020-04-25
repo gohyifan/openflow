@@ -86,7 +86,7 @@ class contributeBanner extends Component {
         };
     }
 
-    
+
 
     checkVerified() {
         // if they are a verified contributor, display unlocked button and make contribution form available
@@ -119,10 +119,10 @@ class contributeBanner extends Component {
                             openOnFocus={true}
                             items={dummyData}
                             />
-                            
+
                             <Button iconBefore="cloud-upload" appearance="minimal" style={theme.contributeButton} onClick={this.setModal.bind(this, false)}>Contribute my data</Button>
                         </form>
-                        
+
                     </Dialog>
                 </div>
             );
@@ -144,6 +144,12 @@ class contributeBanner extends Component {
         });
     }
 
+    fakeContribution() {
+        // simple form to enter details
+        // open a dialog modal
+
+    }
+
     render() {
             return (
                 <ThemeProvider value={theme}>
@@ -163,7 +169,7 @@ class contributeBanner extends Component {
                     </div>
                 </ThemeProvider>
             );
-        
+
     }
 }
 
