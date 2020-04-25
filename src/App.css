@@ -12,7 +12,7 @@
 
 .navbar {
   background-color: #fcfcfc;
-  height: 12vh; 
+  height: 12vh;
   width: 100%;
   display: block;
   border-bottom: solid red 0.5px;
@@ -43,11 +43,11 @@
     transform: rotate(360deg);
   }
 }
-  
+
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-  
-  
-  
+
+
+
   */
