@@ -46,7 +46,7 @@ const theme = {
         marginLeft: '6vh',
         marginTop: '2%',
         textAlign: 'left',
-        color: '#4a4a4a',
+        color: '#000',
         widh: '65%',
         overflowWrap: 'break-word',
         fontSize: '2vh',
@@ -55,7 +55,7 @@ const theme = {
     title: {
         marginLeft: '6vh',
         textAlign: 'left',
-        color: '#4a4a4a',
+        color: '#000',
         marginTop: '5%',
         fontSize: '5vh'
     },
