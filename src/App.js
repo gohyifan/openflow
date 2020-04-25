@@ -4,24 +4,25 @@ import './App.css';
 import Home from './Home';
 import Nav from './components/Nav';
 import Sidebar from './components/Sidebar';
-import SearchResult from './components/SearchResult'
-import Dataset from './components/Dataset'
+import SearchResult from './components/SearchResult';
+import Dataset from './components/Dataset';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import DatasetCard from './components/DatasetCard';
 
 import { Dialog } from 'evergreen-ui';
 
 
 // import custom components
 import Banner from './components/contributeBanner';
-import Trending from './components/trending';
 
 function App() {
   // initialize state of showLoginOverlay as false to hide it
-  
+
 
 
   return (
     <Router>
+    <DatasetCard />
     <div className="App">
       <div class="navbar">
         NAV
