@@ -8,11 +8,32 @@ import SearchResult from './components/SearchResult'
 import Dataset from './components/Dataset'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import { Dialog } from 'evergreen-ui';
+
+
+// import custom components
+import Banner from './components/contributeBanner';
+import Trending from './components/trending';
+
 function App() {
+  // initialize state of showLoginOverlay as false to hide it
+  
+
+
   return (
     <Router>
-
     <div className="App">
+      <div class="navbar">
+        NAV
+      </div>
+      <div className="sideview">
+        SIDE VIEW
+      </div>
+      <div className="body-wrapper">
+          <Banner
+          verified={true}
+          />
+      </div>
       <Nav />
       <Sidebar />
       <Switch>
@@ -26,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
