@@ -28,8 +28,7 @@ const theme = {
         width: '90%',
         height: '33vh',
         display: 'inline-block',
-        borderRadius: 10,
-        boxShadow: '5px 5px 6px 1px #ccc'
+        borderRadius: 10
     },
     textWrapper: {
         display: 'inline-block',
