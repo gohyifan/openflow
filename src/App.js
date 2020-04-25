@@ -12,27 +12,14 @@ import { Dialog } from 'evergreen-ui';
 
 
 // import custom components
-import Banner from './components/contributeBanner';
 import New from './components/New';
 
 function App() {
   // initialize state of showLoginOverlay as false to hide it
   return (
     <Router>
-    <div className="App">
-      <div class="navbar">
-        NAV
-      </div>
-      <div className="sideview">
+      <Nav />
       <Sidebar />
-      </div>
-      <div className="body-wrapper">
-          <Banner
-          verified={true}
-          />
-          <New/>
-      </div>
-
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/search" component={SearchResult} />
