@@ -31,7 +31,7 @@ const theme = {
         height: '33vh',
         display: 'inline-block',
         borderRadius: 10,
-        boxShadow: '5px 5px 6px 1px #ccc'
+        // boxShadow: '5px 5px 6px 1px #ccc'
     },
     textWrapper: {
         display: 'inline-block',
@@ -224,7 +224,7 @@ class contributeBanner extends Component {
             return (
                 <ThemeProvider value={theme}>
                     <div style={theme.wrapper}>
-                        <Pane style={theme.banner}>
+                        <Pane hoverElevation={3} style={theme.banner}>
                             <div style={theme.textWrapper}>
                                 <Heading size={900} style={theme.title}>
                                     <b>Data science for social impact</b>
