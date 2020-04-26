@@ -8,11 +8,11 @@ import {
 } from 'evergreen-ui';
 
 const theme = {
-    wrapper: {
-        width: '100%',
-        margin: '30px 0',
-        textAlign: 'center'
-    },
+    // wrapper: {
+    //     width: '100%',
+    //     margin: '30px 0',
+    //     textAlign: 'center'
+    // },
     head: {
         width: '86%',
         margin: '0 7%',
@@ -36,7 +36,11 @@ export default function Trending() {
     const [datasets, setDatasets] = useState([{title: 'title_1', description: 'description_1', url: 'url'}, ]);
 
     return (
-        <Pane style={theme.wrapper}>
+        <Pane 
+        width="100%"
+        marginX="30px"
+        textAlign="center"
+        >
             <div style={theme.head}>
                 <Heading size={700} style={theme.headTitle}><b>Trending Datasets</b></Heading>
                 <Button appearance="minimal" style={theme.headLink}>See all</Button>
