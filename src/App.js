@@ -4,9 +4,10 @@ import './App.css';
 import Home from './Home';
 import Nav from './components/Nav';
 import Sidebar from './components/Sidebar';
-import SearchResult from './components/SearchResult'
-import Dataset from './components/Dataset'
+import SearchResult from './components/SearchResult';
+import Dataset from './components/Dataset';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import DatasetCard from './components/DatasetCard';
 
 import { Pane } from 'evergreen-ui';
 
