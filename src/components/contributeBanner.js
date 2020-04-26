@@ -31,7 +31,7 @@ const theme = {
         height: '33vh',
         display: 'inline-block',
         borderRadius: 10,
-        boxShadow: '5px 5px 6px 1px #ccc'
+        // boxShadow: '5px 5px 6px 1px #ccc'
     },
     textWrapper: {
         display: 'inline-block',
@@ -141,11 +141,11 @@ class contributeBanner extends Component {
                             >
                             Create new data set
                             </Button>
-                            <Button 
-                            iconBefore="cloud-upload" 
-                            appearance="minimal" 
+                            <Button
+                            iconBefore="cloud-upload"
+                            appearance="minimal"
                             style={theme.contributeButton}
-                            marginTop={40} 
+                            marginTop={40}
                             onClick={() => {
                                 this.setModal(this, false);
                                 this.setIsComplete(this, true);
@@ -239,7 +239,7 @@ class contributeBanner extends Component {
                     </div>
                 </ThemeProvider>
             );
-        
+
     }
 }
 

@@ -63,7 +63,7 @@ export default function New() {
             <div style={theme.linkSection}>
                 <div style={theme.linkColumn}>
                     <div style={theme.linkWrapper}>
-                        <Pane hoverElevation={2} style={theme.link}>
+                        <Pane style={theme.link}>
                             <Avatar
                             src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
                             name="Stanford"
@@ -77,7 +77,7 @@ export default function New() {
                         </Pane>
                     </div>
                     <div style={theme.linkWrapper}>
-                        <Pane hoverElevation={2} style={theme.link}>
+                        <Pane style={theme.link}>
                             <Avatar
                             src="https://assets.fontsinuse.com/static/use-media-items/53/52888/upto-700xauto/59355ed9/Oxford-University-ceremonial-crest.png?resolution=0"
                             name="Oxford"
@@ -93,7 +93,7 @@ export default function New() {
                 </div>
                 <div style={theme.linkColumn}>
                     <div style={theme.linkWrapper}>
-                        <Pane hoverElevation={2} style={theme.link}>
+                        <Pane style={theme.link}>
                             <Avatar
                             src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
                             name="Stanford"
@@ -107,7 +107,7 @@ export default function New() {
                         </Pane>
                     </div>
                     <div style={theme.linkWrapper}>
-                        <Pane hoverElevation={2} style={theme.link}>
+                        <Pane style={theme.link}>
                             <Avatar
                             src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
                             name="Stanford"
@@ -123,7 +123,7 @@ export default function New() {
                 </div>
                 <div style={theme.linkColumn}>
                     <div style={theme.linkWrapper}>
-                        <Pane hoverElevation={2} style={theme.link}>
+                        <Pane style={theme.link}>
                             <Avatar
                             src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
                             name="Stanford"
@@ -137,7 +137,7 @@ export default function New() {
                         </Pane>
                     </div>
                     <div style={theme.linkWrapper}>
-                        <Pane hoverElevation={2} style={theme.link}>
+                        <Pane style={theme.link}>
                             <Avatar
                             src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
                             name="Stanford"
