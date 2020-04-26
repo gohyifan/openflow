@@ -68,7 +68,8 @@ const theme = {
     },
     contributeButton: {
         backgroundColor: '#2c2c64',
-        color: '#fcfcfc'
+        color: '#fcfcfc',
+        height: '40px'
     },
     secondaryButton: {
         color: '#2c2c64'
@@ -141,11 +142,11 @@ class contributeBanner extends Component {
                             >
                             Create new data set
                             </Button>
-                            <Button 
-                            iconBefore="cloud-upload" 
-                            appearance="minimal" 
+                            <Button
+                            iconBefore="cloud-upload"
+                            appearance="minimal"
                             style={theme.contributeButton}
-                            marginTop={40} 
+                            marginTop={40}
                             onClick={() => {
                                 this.setModal(this, false);
                                 this.setIsComplete(this, true);
@@ -230,7 +231,7 @@ class contributeBanner extends Component {
                                     <b>Data science for social impact</b>
                                 </Heading>
                                 <Text style={theme.desc}>
-                                    <b>Lorem Ipsum is simply dummy text of the printing and typesetting industry</b>
+                                    <b>Creating a global standard for big data in medicine.</b>
                                 </Text>
                                 { this.checkVerified() }
                             </div>
