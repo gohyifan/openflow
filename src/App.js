@@ -38,6 +38,7 @@ function App() {
         <Route path="/search" component={SearchResult} />
         <Route path="/datasets/:title" component={ Dataset } />
       </Switch>
+      </div>
     </Router>
   );
 }
