@@ -56,7 +56,7 @@ const theme = {
 
 export default function New() {
     return (
-        <Pane style={theme.wrapper}>
+        <Pane hoverElevation={5} style={theme.wrapper}>
             <div style={theme.head}>
                 <Heading size={700} style={theme.headTitle}><b>Newest Contributors</b></Heading>
                 <Button appearance="minimal" style={theme.headLink}>See all</Button>
@@ -64,7 +64,7 @@ export default function New() {
             <div style={theme.linkSection}>
                 <div style={theme.linkColumn}>
                     <div style={theme.linkWrapper}>
-                        <Pane style={theme.link}>
+                        <Pane hoverElevation={3} style={theme.link}>
                             <Avatar
                             src="https://www.logolynx.com/images/logolynx/ae/aedde728ab8423d2e5a4ed95205fe5cf.jpeg"
                             name="Stanford"
@@ -78,7 +78,7 @@ export default function New() {
                         </Pane>
                     </div>
                     <div style={theme.linkWrapper}>
-                        <Pane style={theme.link}>
+                        <Pane hoverElevation={3} style={theme.link}>
                             <Avatar
                             src="https://assets.fontsinuse.com/static/use-media-items/53/52888/upto-700xauto/59355ed9/Oxford-University-ceremonial-crest.png?resolution=0"
                             name="Oxford"
@@ -94,7 +94,7 @@ export default function New() {
                 </div>
                 <div style={theme.linkColumn}>
                     <div style={theme.linkWrapper}>
-                        <Pane style={theme.link}>
+                        <Pane hoverElevation={3} style={theme.link}>
                             <Avatar
                             src="https://pbs.twimg.com/profile_images/953550423524282368/iFJULpzx_400x400.jpg"
                             name="Durham"
@@ -108,7 +108,7 @@ export default function New() {
                         </Pane>
                     </div>
                     <div style={theme.linkWrapper}>
-                        <Pane style={theme.link}>
+                        <Pane hoverElevation={3} style={theme.link}>
                             <Avatar
                             src="https://brand.ucla.edu/images/identity/logos-and-marks/campus-seal.jpg"
                             name="UCLA"
@@ -124,7 +124,7 @@ export default function New() {
                 </div>
                 <div style={theme.linkColumn}>
                     <div style={theme.linkWrapper}>
-                        <Pane style={theme.link}>
+                        <Pane hoverElevation={3} style={theme.link}>
                             <Avatar
                             src="https://www.pythagoras.co.uk/wp-content/uploads/2015/06/Image_Profile_Bath.jpg"
                             name="University of Bath"
@@ -138,7 +138,7 @@ export default function New() {
                         </Pane>
                     </div>
                     <div style={theme.linkWrapper}>
-                        <Pane style={theme.link}>
+                        <Pane hoverElevation={3} style={theme.link}>
                             <Avatar
                             src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/NUS_coat_of_arms.svg/1200px-NUS_coat_of_arms.svg.png"
                             name="NUS"
