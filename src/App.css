@@ -25,14 +25,14 @@
   display: inline-block;
 }
 
-.body-wrapper {
-  background-color: #f7f2f2;
+/*.body-wrapper {
+  background-color: #ffffff;
   height: 100%;
   width: 80%;
   float: right;
   height: 88vh;
   text-align: center;
-}
+}*/
 
 .card-grid {
   display: grid;

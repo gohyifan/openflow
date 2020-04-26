@@ -10,6 +10,8 @@ import {
     Dialog,
     FilePicker,
     Combobox,
+    TextInput,
+    TickIcon
 } from 'evergreen-ui';
 
 // dummy dataset list
@@ -46,7 +48,7 @@ const theme = {
         marginLeft: '6vh',
         marginTop: '2%',
         textAlign: 'left',
-        color: '#4a4a4a',
+        color: '#000',
         widh: '65%',
         overflowWrap: 'break-word',
         fontSize: '2vh',
@@ -55,7 +57,7 @@ const theme = {
     title: {
         marginLeft: '6vh',
         textAlign: 'left',
-        color: '#4a4a4a',
+        color: '#000',
         marginTop: '5%',
         fontSize: '5vh'
     },
@@ -73,6 +75,17 @@ const theme = {
     },
     formWrapper: {
         margin: '20px 0'
+    },
+    setName: {
+        marginTop: 40,
+        marginBottom: 15,
+    },
+    textInput: {
+        display: 'block',
+        marginBottom: 40
+    },
+    success: {
+        textAlign: 'center'
     }
 };
 
@@ -81,13 +94,12 @@ class contributeBanner extends Component {
         super(props)
         this.state = {
             isShown: false,
-            // for demo purposes, simulate a loading time
-            isLoading: false
+            isNewData: false,
+            isComplete: false
         };
     }
 
-    
-
+    // for contribution button
     checkVerified() {
         // if they are a verified contributor, display unlocked button and make contribution form available
         if (this.props.verified) {
@@ -98,13 +110,13 @@ class contributeBanner extends Component {
                     isShown={this.state.isShown}
                     onCloseComplete={ this.setModal.bind(this, false) }
                     title="Contribute your data"
-                    confirmLabel={this.state.isLoading ? "Almost there..." : "Contribute Data"}
                     hasFooter={false}
                     >
-                        <form style={theme.formWrapper}>
+                        <div style={theme.formWrapper}>
                             <Heading>Select the data file</Heading>
                             <FilePicker
-                            multiple
+                            required={true}
+                            multiple={true}
                             width={'50%'}
                             marginTop={10}
                             placeholder="myFile.csv"
@@ -112,17 +124,67 @@ class contributeBanner extends Component {
                             />
                             <Heading marginTop={40}>Choose the dataset you're contributing to</Heading>
                             <Combobox
+                            required={true}
                             width={'50%'}
                             marginTop={10}
-                            marginBottom={60}
+                            marginBottom={30}
                             placeholder="Pick one"
                             openOnFocus={true}
                             items={dummyData}
                             />
-                            
-                            <Button iconBefore="cloud-upload" appearance="minimal" style={theme.contributeButton} onClick={this.setModal.bind(this, false)}>Contribute my data</Button>
-                        </form>
-                        
+                            <Text>The dataset you're looking for isn't there?</Text>
+                            <Button
+                            appearance="minimal"
+                            style={theme.secondaryButton}
+                            onClick={this.setIsNewData.bind(this, true)}
+                            float={"right"}
+                            >
+                            Create new data set
+                            </Button>
+                            <Button 
+                            iconBefore="cloud-upload" 
+                            appearance="minimal" 
+                            style={theme.contributeButton}
+                            marginTop={40} 
+                            onClick={() => {
+                                this.setModal(this, false);
+                                this.setIsComplete(this, true);
+                                console.log(this.state.isComplete);
+                                console.log(this.state.isShown);
+                            }}
+                            >
+                            Contribute my data
+                            </Button>
+                        </div>
+                        <Dialog
+                        isShown={this.state.isNewData}
+                        onCloseComplete={ this.setIsNewData.bind(this, false)}
+                        title="Create a new dataset"
+                        hasFooter={false}
+                        >
+                            <Heading style={theme.setName}>Name your dataset</Heading>
+                            <TextInput style={theme.textInput} placeholder="Dataset name"></TextInput>
+                            <Button
+                            iconBefore="build"
+                            appearance="minimal"
+                            style={theme.contributeButton}
+                            onClick={this.setIsNewData.bind(this, false)}
+                            >
+                            Create Dataset
+                            </Button>
+                        </Dialog>
+                        <Dialog
+                        isShown={this.state.isComplete}
+                        onCloseComplete={this.setIsComplete.bind(this, false)}
+                        hasFooter={false}
+                        hasHeader={false}
+                        >
+                            <div style={theme.success}>
+                                <TickIcon size={40}/>
+                                <Heading color={"#000"} size={900}><b>Upload Complete!</b></Heading>
+                                <Text>Thanks for your contribution, it means a lot</Text>
+                            </div>
+                        </Dialog>
                     </Dialog>
                 </div>
             );
@@ -138,16 +200,24 @@ class contributeBanner extends Component {
         }
     }
 
+    // Change state to toggle the modal
     setModal(bool) {
         this.setState((state) => {
             return {isShown: bool}
         });
     }
 
-    fakeContribution() {
-        // simple form to enter details 
-        // open a dialog modal 
-        
+    // Change state to toggle the child modal (for the creation of a new dataset)
+    setIsNewData(bool) {
+        this.setState((state) => {
+            return {isNewData: bool}
+        });
+    }
+
+    setIsComplete(bool) {
+        this.setState((state) => {
+            return {isComplete: bool}
+        });
     }
 
     render() {
