@@ -42,6 +42,7 @@ const theme = {
         textAlign: 'left',
         width: '100%',
         borderRadius: 10,
+        cursor: 'pointer'
       },
       img: {
         display: 'inline-block',
@@ -65,7 +66,7 @@ export default function New() {
                     <div style={theme.linkWrapper}>
                         <Pane style={theme.link}>
                             <Avatar
-                            src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
+                            src="https://www.logolynx.com/images/logolynx/ae/aedde728ab8423d2e5a4ed95205fe5cf.jpeg"
                             name="Stanford"
                             size={50}
                             style={theme.img}
@@ -86,6 +87,36 @@ export default function New() {
                             />
                             <div >
                                 <Heading size={600} style={theme.title}><b>University of Oxford</b></Heading>
+                                <Text size={300}><br/>Sleep quality data</Text>
+                            </div>
+                        </Pane>
+                    </div>
+                </div>
+                <div style={theme.linkColumn}>
+                    <div style={theme.linkWrapper}>
+                        <Pane style={theme.link}>
+                            <Avatar
+                            src="https://pbs.twimg.com/profile_images/953550423524282368/iFJULpzx_400x400.jpg"
+                            name="Durham"
+                            size={50}
+                            style={theme.img}
+                            />
+                            <div >
+                                <Heading size={600} style={theme.title}><b>Durham University</b></Heading>
+                                <Text size={300}><br/>Water quality data</Text>
+                            </div>
+                        </Pane>
+                    </div>
+                    <div style={theme.linkWrapper}>
+                        <Pane style={theme.link}>
+                            <Avatar
+                            src="https://brand.ucla.edu/images/identity/logos-and-marks/campus-seal.jpg"
+                            name="UCLA"
+                            size={50}
+                            style={theme.img}
+                            />
+                            <div >
+                                <Heading size={600} style={theme.title}><b>UCLA</b></Heading>
                                 <Text size={300}><br/>Healthcare data</Text>
                             </div>
                         </Pane>
@@ -95,58 +126,28 @@ export default function New() {
                     <div style={theme.linkWrapper}>
                         <Pane style={theme.link}>
                             <Avatar
-                            src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
-                            name="Stanford"
-                            size={50}
-                            style={theme.img}
-                            />
-                            <div >
-                                <Heading size={600} style={theme.title}><b>Durham University</b></Heading>
-                                <Text size={300}><br/>Healthcare</Text>
-                            </div>
-                        </Pane>
-                    </div>
-                    <div style={theme.linkWrapper}>
-                        <Pane style={theme.link}>
-                            <Avatar
-                            src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
-                            name="Stanford"
-                            size={50}
-                            style={theme.img}
-                            />
-                            <div >
-                                <Heading size={600} style={theme.title}><b>UCLA</b></Heading>
-                                <Text size={300}><br/>Healthcare</Text>
-                            </div>
-                        </Pane>
-                    </div>
-                </div>
-                <div style={theme.linkColumn}>
-                    <div style={theme.linkWrapper}>
-                        <Pane style={theme.link}>
-                            <Avatar
-                            src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
-                            name="Stanford"
+                            src="https://www.pythagoras.co.uk/wp-content/uploads/2015/06/Image_Profile_Bath.jpg"
+                            name="University of Bath"
                             size={50}
                             style={theme.img}
                             />
                             <div >
                                 <Heading size={600} style={theme.title}><b>University of Bath</b></Heading>
-                                <Text size={300}><br/>Healthcare</Text>
+                                <Text size={300}><br/>Sports data</Text>
                             </div>
                         </Pane>
                     </div>
                     <div style={theme.linkWrapper}>
                         <Pane style={theme.link}>
                             <Avatar
-                            src="https://1000logos.net/wp-content/uploads/2018/02/Stanford-Logo.png"
-                            name="Stanford"
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/NUS_coat_of_arms.svg/1200px-NUS_coat_of_arms.svg.png"
+                            name="NUS"
                             size={50}
                             style={theme.img}
                             />
                             <div >
                                 <Heading size={600} style={theme.title}><b>NUS</b></Heading>
-                                <Text size={300}><br/>Healthcare</Text>
+                                <Text size={300}><br/>Healthcare data</Text>
                             </div>
                         </Pane>
                     </div>

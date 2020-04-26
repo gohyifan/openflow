@@ -224,7 +224,7 @@ class contributeBanner extends Component {
             return (
                 <ThemeProvider value={theme}>
                     <div style={theme.wrapper}>
-                        <Pane style={theme.banner}>
+                        <Pane hoverElevation={3} style={theme.banner}>
                             <div style={theme.textWrapper}>
                                 <Heading size={900} style={theme.title}>
                                     <b>Data science for social impact</b>
