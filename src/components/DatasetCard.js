@@ -8,13 +8,13 @@ const theme = {
     margin: '10px 2%',
     textAlign: 'center'
   },
-  infoWrapper: {
-    display: 'inline-block',
-    textAlign: 'left',
-    width: 250,
-    borderRadius: '10px',
-    cursor: 'pointer'
-  },
+  // infoWrapper: {
+  //   display: 'inline-block',
+  //   textAlign: 'left',
+  //   width: 250,
+  //   borderRadius: '10px',
+  //   cursor: 'pointer'
+  // },
   img: {
     borderRadius: '10px 10px 0 0'
   }
