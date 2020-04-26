@@ -19,11 +19,11 @@ function Nav() {
   return (
     <ThemeProvider value={theme}>
       <Pane
-        elevation={1}
         display="flex"
         alignItems="center"
         justifyContent="space-between"
         paddingX={32}
+        borderBottom="muted"
       >
         <Link to="/">
           <img src={logo} style={{ height: "100px" }} alt=""/>
