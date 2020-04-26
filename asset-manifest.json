@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/OpenFlow/static/css/main.f182b6a2.chunk.css",
+    "main.js": "/OpenFlow/static/js/main.8756431b.chunk.js",
+    "main.js.map": "/OpenFlow/static/js/main.8756431b.chunk.js.map",
+    "runtime-main.js": "/OpenFlow/static/js/runtime-main.c4544e7a.js",
+    "runtime-main.js.map": "/OpenFlow/static/js/runtime-main.c4544e7a.js.map",
+    "static/js/2.5c74bb09.chunk.js": "/OpenFlow/static/js/2.5c74bb09.chunk.js",
+    "static/js/2.5c74bb09.chunk.js.map": "/OpenFlow/static/js/2.5c74bb09.chunk.js.map",
+    "index.html": "/OpenFlow/index.html",
+    "precache-manifest.03cd81db74c88b58221e1aedd5f69ee7.js": "/OpenFlow/precache-manifest.03cd81db74c88b58221e1aedd5f69ee7.js",
+    "service-worker.js": "/OpenFlow/service-worker.js",
+    "static/css/main.f182b6a2.chunk.css.map": "/OpenFlow/static/css/main.f182b6a2.chunk.css.map",
+    "static/js/2.5c74bb09.chunk.js.LICENSE.txt": "/OpenFlow/static/js/2.5c74bb09.chunk.js.LICENSE.txt",
+    "static/media/illustration.png": "/OpenFlow/static/media/illustration.b3975cd1.png",
+    "static/media/logo.svg": "/OpenFlow/static/media/logo.bb53b437.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4544e7a.js",
+    "static/js/2.5c74bb09.chunk.js",
+    "static/css/main.f182b6a2.chunk.css",
+    "static/js/main.8756431b.chunk.js"
+  ]
+}
