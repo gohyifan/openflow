@@ -1,4 +1,4 @@
-import React, { useState } from  'react';
+import React from  'react';
 import {
     Pane,
     Heading,
@@ -58,7 +58,7 @@ export default function New() {
     return (
         <Pane style={theme.wrapper}>
             <div style={theme.head}>
-                <Heading size={700} style={theme.headTitle}><b>Newest</b></Heading>
+                <Heading size={700} style={theme.headTitle}><b>Newest Contributors</b></Heading>
                 <Button appearance="minimal" style={theme.headLink}>See all</Button>
             </div>
             <div style={theme.linkSection}>

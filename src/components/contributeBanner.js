@@ -141,11 +141,11 @@ class contributeBanner extends Component {
                             >
                             Create new data set
                             </Button>
-                            <Button
-                            iconBefore="cloud-upload"
-                            appearance="minimal"
+                            <Button 
+                            iconBefore="cloud-upload" 
+                            appearance="minimal" 
                             style={theme.contributeButton}
-                            marginTop={40}
+                            marginTop={40} 
                             onClick={() => {
                                 this.setModal(this, false);
                                 this.setIsComplete(this, true);
