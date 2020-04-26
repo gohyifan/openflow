@@ -34,7 +34,7 @@ function DatasetCard(props) {
           <Heading color="black" paddingLeft="12px" paddingTop="8px" fontSize="18px" fontWeight="700">{props.title}</Heading>
           <Paragraph color="grey" paddingBottom="12px" paddingLeft="12px">{props.description}</Paragraph>
         </Pane>
-      </Pane>
+      </div>
   );
 }
 
