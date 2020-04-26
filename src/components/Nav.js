@@ -7,10 +7,6 @@ import logo from '../logo.svg';
 
 const theme = {
   ...defaultTheme,
-  primaryButton: {
-    backgroundColor: '#2c2c64',
-    color: '#fcfcfc'
-  },
   secondaryButton: {
     color: '#2c2c64'
   },
@@ -23,22 +19,21 @@ function Nav() {
   return (
     <ThemeProvider value={theme}>
       <Pane
-        elevation={1}
         display="flex"
         alignItems="center"
         justifyContent="space-between"
         paddingX={32}
+        borderBottom="muted"
       >
         <Link to="/">
           <img src={logo} style={{ height: "100px" }} alt=""/>
         </Link>
         <Pane display="flex" alignItems="center">
           <SearchInput placeholder="Search datasets..." height={40} marginRight={8} />
-          <Button height={40} appearance="minimal" style={theme.advanceButton} marginRight={8}>Advance</Button>
+          <Button height={40} appearance="minimal" style={theme.advanceButton} marginRight={8}>Advanced</Button>
         </Pane>
         <div>
-          <Button height={40} appearance="minimal" style={theme.secondaryButton} marginRight={8}>Login</Button>
-          <Button height={40} appearance="minimal" style={theme.primaryButton}>Register</Button>
+          <Button height={40} appearance="minimal" style={theme.secondaryButton}>Log out</Button>
         </div>
       </Pane>
     </ThemeProvider>

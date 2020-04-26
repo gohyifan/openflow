@@ -3,6 +3,7 @@ import Banner from './components/contributeBanner';
 import New from './components/New';
 import Trending from './components/trending';
 
+
 function Home() {
   return (
     <div>

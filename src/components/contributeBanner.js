@@ -31,7 +31,7 @@ const theme = {
         height: '33vh',
         display: 'inline-block',
         borderRadius: 10,
-        boxShadow: '5px 5px 6px 1px #ccc'
+        // boxShadow: '5px 5px 6px 1px #ccc'
     },
     textWrapper: {
         display: 'inline-block',
